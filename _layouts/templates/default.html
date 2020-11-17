@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include nav/nav.html %}
+
+    <main aria-label="Content">
+      <div>
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+    <!-- Bootstrap -->
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

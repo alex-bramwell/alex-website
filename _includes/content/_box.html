@@ -1,0 +1,19 @@
+<div class="container">
+  {% if include.content.header %}
+  <div class="row justify-content-center">
+    <h2>{{ include.content.header }}</h2>
+  </div>
+  {% endif %}
+  <div class="row no-gutters">
+    {% for box in include.content.boxItem %}
+    <div class="col-lg d-flex m-3">
+      <div class="bg-light p-3">
+        <img class="img-fluid" src="{{ box.image }}" alt="">
+        <h4>{{ box.header }}</h4>
+        <p>{{ box.info }}</p>
+        <a class="btn btn btn-secondary" href="{{ news.cta.url }}">{{ box.cta.text }}</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

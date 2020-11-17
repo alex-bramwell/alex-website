@@ -1,0 +1,9 @@
+---
+layout: templates/default
+---
+
+{% include headers/headers.html header=page.header %}
+
+{% for content in page.contents %}
+  {% include content/content.html content=content %}
+{% endfor %}

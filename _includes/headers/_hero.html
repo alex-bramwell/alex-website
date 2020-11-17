@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">{{ include.header.title }}</h1>
+    <p>{{ include.header.subtitle }}</p>
+    {% if include.header.cta %}
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">{{ include.header.cta }}</a></p>
+    {% endif %}
+  </div>
+</div>
